@@ -58,17 +58,23 @@ class DondeMiguel:
         btn1 = tk.Button(frame2,text='Ingresar',command=self.evento_ingresar,**estilo_boton)
         btn1.grid(row=2,column=0,pady=5,padx=5,columnspan=2)
 
-
-
     def evento_ingresar(self, event=None):
+        # Diccionario de usuarios válidos
+        usuarios_validos = {
+            "admin": "1234",
+            "henry": "pass123",
+            "juan": "clave456",
+            "sergio": "abc123",
+        }
 
         usuario = self.usuario.get()
         clave = self.contrasenia.get()
 
-        if usuario == "admin" and clave == "1234":
+        # Verifica si el usuario existe y la clave coincide
+        if usuario in usuarios_validos and usuarios_validos[usuario] == clave:
             messagebox.showinfo("Bienvenido", f"Hola {usuario}, acceso concedido.")
             root.destroy()
-            #pasamos al menu
+            # pasamos al menu
             menu = tk.Tk()
             aplicacion = Menu_servicios(menu)
             menu.mainloop()
