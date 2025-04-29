@@ -35,7 +35,7 @@ class DondeMiguel:
         frame1.columnconfigure(0, weight=1)
         frame1.rowconfigure(0,weight=1)
 
-        tk.Label(frame1,text='Donde Miguel',bg='#145dbf',font=('Segoe UI', 30,'bold'),fg='white').grid(sticky='NSEW')
+        tk.Label(frame1,text='Donde Fabio',bg='#145dbf',font=('Segoe UI', 30,'bold'),fg='white').grid(sticky='NSEW')
 
         frame2 = tk.Frame(self.root,**estilo_frame)
         frame2.grid(row=1, sticky=tk.NSEW)
