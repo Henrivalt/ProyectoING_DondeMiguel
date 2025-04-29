@@ -14,7 +14,7 @@ class Menu_servicios:
         self.root.columnconfigure(1, weight=900)
         self.root.rowconfigure(0,weight=50)
         self.root.rowconfigure(1,weight=450)
-        self.root.attributes('-zoomed', True)
+        #self.root.attributes('-zoomed', True)
 
         estilo_frame = {'bg': "white", 'highlightbackground': "#dfe3ee", 'highlightthickness': 1, 'bd': 0}
 
